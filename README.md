@@ -1,6 +1,16 @@
-# Common-Composer-Blocks
+# composer-trade-common
 
-[composer-trade-py](https://github.com/SolarWolf-Code/composer-trade-py/tree/main) SDK allows you to easily reference other building blocks based on defined variables within your project. This repo serves as a common collection of commonly used building blocks.
+A collection of common groups used in Composer symphonies. Install with:
+
+```bash
+pip install composer-trade-common
+```
+
+Then import groups directly:
+
+```python
+from composer_trade_common import safe_sectors_or_bonds
+```
 
 
 
@@ -12,7 +22,7 @@ In this example we can import the defined group `Safe Sectors or Bonds` by impor
 ```py
 from composer.client import ComposerClient
 from composer.models.common.symphony import *
-from groups.safe_sectors_or_bonds.main import group_safe_sectors_or_bond_1011a315
+from composer_trade_common import safe_sectors_or_bonds
 import os
 from dotenv import load_dotenv
 
@@ -26,7 +36,7 @@ symph = SymphonyDefinition(
     children=[
         WeightCashEqual(
             children=[
-                group_safe_sectors_or_bond_1011a315
+                safe_sectors_or_bonds
             ]
         ),
     ],
