@@ -16,7 +16,7 @@ from composer_trade_common import safe_sectors_or_bonds
 
 ## Usage
 
-In this example we can import the defined group `Safe Sectors or Bonds` by importing it from a different file. 
+In this example we can import the defined group `Safe Sectors or Bonds`.
 
 ### Input:
 ```py
